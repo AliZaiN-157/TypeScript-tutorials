@@ -1,4 +1,15 @@
 // interfaces
+const me = {
+    name: 'ali',
+    age: 20,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log('I spent', amount);
+        return amount;
+    }
+};
 import { Invoice } from "./classes/Invoice.js";
 const invOne = new Invoice('mario', 'work on the mario website', 230);
 const invTwo = new Invoice('ryu', 'work on the abc website', 330);
